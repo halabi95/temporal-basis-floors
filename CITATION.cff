@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "temporal-basis-floors"
+authors:
+  - family-names: "El Halabi"
+    given-names: "Hamzah"
+    orcid: "https://orcid.org/0009-0005-3130-946X"
+    affiliation: "Hokkaido University"
+  - family-names: "Takahashi"
+    given-names: "Yusuke"
+    affiliation: "Hokkaido University"
+license: MIT
+repository-code: "https://github.com/halabi95/temporal-basis-floors"
+preferred-citation:
+  type: article
+  title: "How Accurately Must the Frequency Be Known? Temporal Basis Selection for Reduced-Order Reconstruction of Periodic Fluid-Structure Interaction"
+  authors:
+    - family-names: "El Halabi"
+      given-names: "Hamzah"
+    - family-names: "Takahashi"
+      given-names: "Yusuke"
+  journal: "Turbomachinery"
+  year: 2026
