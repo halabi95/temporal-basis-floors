@@ -11,11 +11,12 @@ Frequency-domain methods represent a time-periodic flow on a small basis of temp
 | Path | Contents |
 |---|---|
 | `src/floors.py` | All projection floors, the frequency sensitivity, the region floors and the Eq. (9) check; writes `results/floors.json` |
+| `src/make_fig1_setup.py` | Reproduces Fig. 1: the network's subdomains and the 753 measurement points (needs the reference mesh) |
 | `src/make_figures.py` | Reproduces Figs. 2, 3 and 4 from `results/floors.json` |
 | `src/aggregate_trained.py` | Reproduces Table 3 (trained reconstruction) from the result CSVs |
 | `results/floors.json` | Output of `floors.py` on the reference data used in the paper |
 | `results/trained_*.csv` | Evaluated errors and floors of the 54 trained networks (3 seeds each) |
-| `figures/` | Figs. 2 to 4 as PDF and PNG |
+| `figures/` | Fig. 1 as PNG; Figs. 2 to 4 as PDF and PNG |
 | `data/` | Place the reference `.npz` files here (not tracked by git) |
 
 ## Reproducing the paper
@@ -25,6 +26,7 @@ pip install -r requirements.txt
 python src/make_figures.py        # Figs. 2-4 from results/floors.json
 python src/aggregate_trained.py   # Table 3 from results/trained_*.csv
 python src/floors.py              # recompute results/floors.json (needs the reference data in data/)
+python src/make_fig1_setup.py     # Fig. 1 (needs the reference mesh in data/)
 ```
 
 The first two commands need nothing beyond this repository. `floors.py` takes a few minutes, most of it the DMD of the cylinder field.
@@ -39,6 +41,7 @@ The first two commands need nothing beyond this repository. `floors.py` takes a 
 | Eq. (7) optimal floor | `opt_floor()` |
 | Refined fundamental f0* | `refine()` |
 | Eq. (9) phase-slip model | `energy_fractions()`, `predicted()` |
+| Fig. 1 | `make_fig1_setup.py` |
 | Fig. 2, Fig. 3, Fig. 4 | keys `fig2`, `fig3a` and `mech`, `fig4` of `floors.json` |
 | Table 3 | `aggregate_trained.py` |
 
