@@ -1,5 +1,5 @@
 # temporal-basis-floors
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23345752.svg)](https://doi.org/10.5281/zenodo.23345752)
 Code and results for
 
 > H. El Halabi and Y. Takahashi, **How Accurately Must the Frequency Be Known? Temporal Basis Selection for Reduced-Order Reconstruction of Periodic Fluid-Structure Interaction**, submitted to *Turbomachinery* (ISROMAC19 special issue), 2026.
